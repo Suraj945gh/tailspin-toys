@@ -32,6 +32,17 @@ const games = await getAllGames(getDatabase());
 </Layout>
 ```
 
+### Component Contracts and Comments
+
+- Every reusable component in `src/components/` and `src/layouts/` must define
+  and document its `Props` interface in frontmatter. Describe what each prop
+  controls, including optional values and defaults.
+- Page components should document non-obvious build-time decisions, route
+  constraints, or data transformations. Do not add comments that repeat the
+  markup or code immediately below them.
+- Keep component contract comments current whenever props or rendered behavior
+  changes.
+
 ## Layouts
 
 - Create reusable layout components in `src/layouts/`
